@@ -1,0 +1,78 @@
+ion-header {
+    background: transparent;
+    ion-title{
+      text-align: center;
+      font-family: lato;
+      color: #fff
+    }
+    ion-item {
+      --background: transparent;
+      ion-avatar {
+        background: white;
+      }
+    }  
+  }
+  
+  ion-content {
+    * {
+      font-family: lato;
+    }
+    .main-header {
+      height: 45vh;
+      width: 150%;
+      background: linear-gradient(90deg, var(--ion-color-secondary) 10%, var(--ion-color-secondary-tint) 100%);
+      box-shadow: 0 1px 10px var(--ion-color-light);
+      border-radius: 0 0 50% 50%;
+      margin-left: -14vh;
+      margin-top: -60px;
+    }
+    ion-item {
+      --background: transparent;
+      .pesquisa{
+        margin: 0 8px;
+        ion-searchbar{
+          --border-radius: 20px;
+          margin-top: -30px;
+        }
+      }
+      .dr{
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: var(--ion-color-dark);
+      }
+    }
+    ion-grid {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(10vh);
+      padding-bottom: 8vh;
+      ion-row {
+              ion-label {
+                font-size: 1.4rem;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+              }
+            }
+            b {
+              font-size: 1.2rem;
+            }
+          }
+          }
+          ion-card {
+            box-shadow: -1px 11px 13px -6px rgb(87, 86, 86);
+            border-radius: 10px !important;
+            margin: 10px 0;
+            ion-card-title{
+              background: transparent;
+            }
+            ion-card-content {
+              ion-label {
+                font-weight: bold;
+                text-shadow: 1px 1px 1px var(--ion-color-medium);
+                letter-spacing: 0.5px;
+              }
+            }
+          }
+        

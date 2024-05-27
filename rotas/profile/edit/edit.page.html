@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-buttons slot="start">
+  <ion-back-button defaultHref="/profile"></ion-back-button>
+</ion-buttons>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+  <ion-card class="profile-content">
+    <div align="center" class="image">
+      <ion-avatar>
+        <img src="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/c/c7/OG_logo.png?version=06511d86086ded8566bafebb6cdad845" />
+      </ion-avatar>
+    </div>
+  </ion-card>
+ 
+  <ion-card class="edit">
+    <form>
+      <div class="ion-margin-vertical">
+        <ion-item lines="full">
+          <ion-input placeholder="Nome"></ion-input>
+        </ion-item>
+      </div>
+      <div class="ion-margin-vertical">
+        <ion-item lines="full">
+          <ion-input placeholder="email"></ion-input>
+        </ion-item>
+      </div>
+      <div class="ion-margin-vertical">
+        <ion-item lines="full">
+          <ion-input placeholder="endereço"></ion-input>
+        </ion-item>
+      </div>
+    </form>
+  </ion-card>
+</ion-content>

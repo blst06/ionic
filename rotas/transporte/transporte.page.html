@@ -1,0 +1,127 @@
+<ion-header class="ion-no-border">
+    <ion-item lines="none">
+        <ion-title>Transporte</ion-title>
+        <ion-menu-button fill="clear" slot="start"
+            color="light"></ion-menu-button>
+        <ion-avatar slot="end" [routerLink]="['/', 'profile']"
+            routerLinkActive="selected">
+            <img
+                src="https://th.bing.com/th/id/OIP.99PbJ6dXyt27BRk70vSsfgHaHa?rs=1&pid=ImgDetMain" />
+        </ion-avatar>
+    </ion-item>
+</ion-header>
+<ion-content [fullscreen]="true" color="light">
+    <!--borda-->
+    <div class="main-header"></div>
+    <ion-grid>
+        <!--pesquisa-->
+        <div class="pesquisa">
+            <ion-searchbar></ion-searchbar>
+        </div>
+        <!--icons-->
+        <ion-row class="ion-margin-horizontal ion-margin-top">
+            <ion-col>
+                <ion-label color="light">
+                    <p>
+                        <ion-button shape="round" color="light" size="large"
+                            [routerLink]="['/', 'recarga']">
+                            <ion-icon slot="icon-only"
+                                name="cash-outline"></ion-icon>
+                        </ion-button>
+                        <ion-button shape="round" color="light" size="large"
+                            [routerLink]="['/', 'historico']">
+                            <ion-icon slot="icon-only"
+                                name="document-text-outline"></ion-icon>
+                        </ion-button>
+                        <ion-button shape="round" color="light" size="large"
+                            [routerLink]="['/', 'notificacoes']">
+                            <ion-icon slot="icon-only"
+                                name="notifications-outline"></ion-icon>
+                        </ion-button>
+                    </p>
+                </ion-label>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <!--cartao-->
+            <div class="ion-padding">
+                <ion-item lines="none">
+                    <ion-label class="dr"> Cartões </ion-label>
+                </ion-item>
+                <ion-card>
+                    <ion-img
+                        src="https://th.bing.com/th/id/OIP.bLXa4nDZTe0hgDoseudoDAAAAA?w=474&h=315&rs=1&pid=ImgDetMain"></ion-img>
+                    <ion-card-content>
+                        <ion-row>
+                            <ion-col size="8">
+                                <ion-card-subtitle>Cartão Passafacil</ion-card-subtitle>
+                                <ion-card-subtitle>Saldo
+                                    atual</ion-card-subtitle>
+                                <ion-card-subtitle
+                                    color="success">30,00</ion-card-subtitle>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-content>
+                </ion-card>
+            </div>
+            <!--Fim(abaixo test)-->
+            <div class="ion-padding">
+                <ion-card>
+                    <ion-img
+                        src="https://th.bing.com/th/id/OIP.bLXa4nDZTe0hgDoseudoDAAAAA?w=474&h=315&rs=1&pid=ImgDetMain"></ion-img>
+                    <ion-card-content>
+                        <ion-row>
+                            <ion-col size="8">
+                                <ion-card-subtitle>Carteirinha</ion-card-subtitle>
+                                <ion-card-subtitle>Saldo
+                                    atual</ion-card-subtitle>
+                                <ion-card-subtitle
+                                    color="success">R$10,00</ion-card-subtitle>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-content>
+                </ion-card>
+            </div>
+            <div class="ion-padding">
+                <ion-card>
+                    <ion-img
+                        src="https://th.bing.com/th/id/OIP.bLXa4nDZTe0hgDoseudoDAAAAA?w=474&h=315&rs=1&pid=ImgDetMain"></ion-img>
+                    <ion-card-content>
+                        <ion-row>
+                            <ion-col size="8">
+                                <ion-card-subtitle>Nome do
+                                    Cartao</ion-card-subtitle>
+                                <ion-card-subtitle>Saldo
+                                    atual</ion-card-subtitle>
+                                <ion-card-subtitle
+                                    color="success">R$1,00</ion-card-subtitle>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-content>
+                </ion-card>
+            </div>
+            <div class="ion-padding">
+                <ion-card>
+                    <ion-img
+                        src="https://th.bing.com/th/id/OIP.bLXa4nDZTe0hgDoseudoDAAAAA?w=474&h=315&rs=1&pid=ImgDetMain"></ion-img>
+                    <ion-card-content>
+                        <ion-row>
+                            <ion-col size="8">
+                                <ion-card-subtitle>Nome do
+                                    Cartao</ion-card-subtitle>
+                                <ion-card-subtitle>Saldo
+                                    atual</ion-card-subtitle>
+                                <ion-card-subtitle
+                                    color="success">R$1,00</ion-card-subtitle>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-content>
+                </ion-card>
+            </div>
+
+        </ion-row>
+
+    </ion-grid>
+
+</ion-content>

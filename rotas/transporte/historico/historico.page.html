@@ -1,0 +1,32 @@
+<ion-header class="ion-no-border">
+  <ion-item lines="none">
+      <ion-menu-button fill="clear" slot="start"
+          color="light"></ion-menu-button>
+      <ion-avatar slot="end" [routerLink]="['/', 'profile']"
+          routerLinkActive="selected">
+          <img
+              src="https://th.bing.com/th/id/OIP.99PbJ6dXyt27BRk70vSsfgHaHa?rs=1&pid=ImgDetMain" />
+      </ion-avatar>
+  </ion-item>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+  <div class="main-header"></div>
+  <ion-grid>
+    <ion-list>
+      <ion-list-header>
+        <ion-label>Recentes</ion-label>
+      </ion-list-header>
+      <ion-item lines="none">
+        <ion-label size="large" class="ion-text-wrap">
+          <b>Nome Cartao</b>
+          <p>
+            00/00/0000
+          </p>
+        </ion-label>
+        <ion-text slot="end" color="danger">R$ -99999999999</ion-text>
+      </ion-item>
+    </ion-list>
+  </ion-grid>
+
+</ion-content>
