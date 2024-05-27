@@ -1,0 +1,46 @@
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Número do Cartão</ion-label>
+    <ion-input type="text" [(ngModel)]="numeroCartao"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Nome do Proprietário</ion-label>
+    <ion-input type="text" [(ngModel)]="nomeProprietario"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">CPF</ion-label>
+    <ion-input type="text" [(ngModel)]="cpf"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Endereço</ion-label>
+    <ion-input type="text" [(ngModel)]="endereco"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Código de Segurança (CVC)</ion-label>
+    <ion-input type="text" [(ngModel)]="cvc"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Data de Validade</ion-label>
+    <ion-input type="text" [(ngModel)]="dataValidade"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Tipo de Cartão</ion-label>
+    <ion-select [(ngModel)]="tipoCartao">
+      <ion-select-option value="Banco do Itaú">Banco do Itaú</ion-select-option>
+      <ion-select-option value="Banco Digital Nubank">Banco Digital Nubank</ion-select-option>
+      <!-- Adicione mais opções conforme necessário -->
+    </ion-select>
+  </ion-item>
+
+  <ion-button expand="block" (click)="adicionarCartao()">Adicionar Cartão</ion-button>
+
+  <ion-item *ngIf="!todosCamposPreenchidos()" lines="none">
+    <ion-text color="warning">Por favor, preencha todos os campos.</ion-text>
+  </ion-item>
+</ion-content>

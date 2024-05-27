@@ -1,0 +1,65 @@
+/* Estilo para o cartão */
+ion-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Estilo para o cabeçalho do cartão */
+ion-card-header {
+  padding: 16px;
+}
+
+/* Estilo para o título do cartão */
+ion-card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Estilo para o subtítulo do cartão */
+ion-card-subtitle {
+  font-size: 14px;
+  color: #666666;
+}
+
+/* Estilo para o conteúdo do cartão */
+ion-card-content {
+  padding: 16px;
+}
+
+/* Estilo para os itens dentro do cartão */
+ion-item {
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+  --border-radius: 0;
+  --background: transparent;
+  margin-top: -8px;
+}
+
+/* Estilo para as etiquetas dentro do cartão */
+ion-label {
+  color: #333333;
+  font-size: 14px;
+}
+
+/* Estilo para o texto dentro do cartão */
+ion-text {
+  color: #666666;
+  font-size: 14px;
+}
+
+/* Estilo para o botão de adicionar */
+ion-button {
+  margin-top: 20px;
+  --background: #3880ff;
+  --border-radius: 8px;
+}
+
+/* Estilo para o botão de ir para transporte */
+#botao-transporte {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      HOME
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card *ngFor="let cartao of cartoes">
+      <ion-card-header>
+        <ion-card-title>{{ cartao.nomeProprietario }}</ion-card-title>
+        <ion-card-subtitle>Número do Cartão: {{ cartao.numeroCartao }}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label>CPF:</ion-label>
+          <ion-text>{{ cartao.cpf }}</ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-label>Endereço:</ion-label>
+          <ion-text>{{ cartao.endereco }}</ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-label>Código de Segurança (CVC):</ion-label>
+          <ion-text>{{ cartao.cvc }}</ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-label>Data de Validade:</ion-label>
+          <ion-text>{{ cartao.dataValidade }}</ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-label>Tipo de Cartão:</ion-label>
+          <ion-text>{{ cartao.tipoCartao }}</ion-text>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+
+  <ion-button expand="block" (click)="adicionarCartao()">Adicionar Cartão</ion-button>
+
+  <!-- Botão para ir para a página de transporte -->
+  <ion-button id="botao-transporte" expand="block" (click)="irParaTransporte()">
+    >
+  </ion-button>
+</ion-content>
